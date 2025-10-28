@@ -3,6 +3,8 @@
 # October 28, 2025
 # CSDS 312 - Lab Activity 5
 
+# You can find the same/updated file on this link: https://github.com/WakenMac/Waks-CSDS312-Stuff/tree/main/Lab%20Activity/Lab%20Activity%205
+
 # The following packages are needed.
 # !pip install kagglehub polars pandas plotnine
 
@@ -248,6 +250,12 @@ else:
         + geom_point(alpha=0.5)
         + facet_wrap('~load_type')
         + geom_smooth(method='lm', color='red')
+        + labs(
+            title='Effect of Surface Area on Heating and Cooling Load',
+            x='Surface Area',
+            y='Load',
+            color='Load Type'
+        )
     )
 
     (
@@ -256,6 +264,12 @@ else:
         + geom_point(alpha=0.5)
         + facet_wrap('~load_type')
         + geom_smooth(method='lm', color='red')
+        + labs(
+            title='Effect of Wall Area on Heating and Cooling Load',
+            x='Surface Area',
+            y='Load',
+            color='Load Type'
+        )
     )
 
     
@@ -265,6 +279,12 @@ else:
         + geom_point(alpha=0.5)
         + facet_wrap('~load_type')
         + geom_smooth(method='lm', color='red')
+        + labs(
+            title='Effect of Roof Area on Heating and Cooling Load',
+            x='Surface Area',
+            y='Load',
+            color='Load Type'
+        )
     )
 
     (
