@@ -12,8 +12,7 @@ import kagglehub
 import os
 import polars as pl
 import pandas as pd
-from plotnine import ggplot, aes, geom_point, geom_smooth, geom_bar, geom_histogram, geom_boxplot, scale_fill_manual, facet_wrap, coord_flip, labs, theme_minimal
-import matplotlib.pyplot as plt
+from plotnine import ggplot, aes, geom_point, geom_smooth, geom_bar, facet_wrap, labs, theme_minimal
 
 # Activity #1 Pattern Detection
 # Using the same dataset, find which color of diamond has the highest average price.
