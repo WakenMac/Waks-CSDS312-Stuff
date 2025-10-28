@@ -2,7 +2,6 @@
 # Purpose: To learn the basic Data Analysis techniques
 
 import polars as pl
-import pandas as pd
 from plotnine import ggplot, aes, geom_point, geom_smooth, geom_bar, labs, theme_minimal
 
 # [1] Importing and inspecting the data

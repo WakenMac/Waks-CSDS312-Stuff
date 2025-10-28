@@ -11,7 +11,6 @@
 import kagglehub
 import os
 import polars as pl
-import pandas as pd
 from plotnine import ggplot, aes, geom_point, geom_smooth, geom_bar, facet_wrap, labs, theme_minimal
 
 # Activity #1 Pattern Detection
@@ -226,6 +225,8 @@ else:
         [2] Wall Area, Overall Height, and Relative Compactness are strongly correlated to our output vars.
         [3] Orientation and Glazing Area Distribution have weak correlation to our output vars.
         [4] Heating and Cooling loads have a strong positive correlation with each other.
+        [5] Input variables have little to no correlation to each other. This makes them suited predictors for our
+            heating and cooling load.
     """
 
     # [3] Create at least 2 visualizations using plotnine.
